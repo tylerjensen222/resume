@@ -1,0 +1,150 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Minimalist Professional Resume Template
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\documentclass[a4paper,10pt]{article}
+
+%-----------------------------
+% Packages and Settings
+%-----------------------------
+\usepackage[margin=1in]{geometry}      % Set page margins
+\usepackage{enumitem}                  % Custom list environments
+\usepackage{hyperref}                  % For hyperlinks
+\usepackage{xcolor}                    % For colored text/links
+\usepackage{parskip}                   % Better paragraph spacing
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}                   % Improved font rendering
+
+\usepackage{parskip}
+\setlength{\parskip}{0.25em}
+
+% Uncomment the next line for a modern sans-serif look:
+% \renewcommand{\familydefault}{\sfdefault}
+
+% Section title formatting: uppercase and a rule underneath
+\usepackage{titlesec}
+\titleformat{\section}{\large\scshape\raggedright}{}{0em}{}[\titlerule]
+
+%-----------------------------
+% Custom Commands
+%-----------------------------
+% Command for header entries with a title and date on the same line
+\newcommand{\resumeEntry}[2]{%
+  \noindent\textbf{#1} \hfill \textit{#2}\par\vspace{-0.5ex}%
+}
+
+%-----------------------------
+% Document Content
+%-----------------------------
+\begin{document}
+\pagestyle{empty}
+\small
+
+%-----------------------------
+% Header: Name and Contact Information
+%-----------------------------
+\begin{center}
+    {\LARGE \textbf{Tyler Jensen}}\\[2mm]
+    \small
+    \href{mailto:tyjensen222@gmail.com}{tyjensen222@gmail.com} \textbullet\ 
+    (303) 888-4604 \textbullet\ Ca\~{n}on City, CO \\
+    \href{https://www.linkedin.com/in/tyler-jensen-923130181}{LinkedIn} \textbullet\ 
+    \href{https://github.com/yourprofile}{GitHub}
+\end{center}
+
+\vspace{0.25cm}
+
+%-----------------------------
+% Experience Section
+%-----------------------------
+\section*{Experience}
+
+\resumeEntry{Senior Data Analyst, Engrain}{Oct 2025 -- Present}
+\begin{itemize}[leftmargin=*, noitemsep]
+    \item Built and maintained a collection of PowerBI dashboards giving stakeholders key insights into a variety of
+    KPIs across the organization and enabling managment and C-Suite members to make data-driven decisions.
+    Created custom ETL pipelines ingesting paginated API data using M.
+    \item Built and maintained a variety of automations employing a myraid of APIs to streamline product implementation
+    and delivery.
+    \item Used OpenAI's APIs to fine-tune vision and customer support agents, and deployed them to key systems.
+    \item Developed and deployed an "Auto-Tasking" application using Python that solved a Linear Programming problem to optimally
+    partition tasks in a work queue to corresponding team members.
+\end{itemize}
+
+\resumeEntry{Data Analyst, Engrain}{May 2024 -- Oct 2025}
+\begin{itemize}[leftmargin=*, noitemsep]
+    \item Spearheaded a data cleanse initiative across all key systems in the organization to prepare for 
+    a state-of-the-art customer portal.
+    \item Built and maintained a Vector Database using Pinecone to assist in fuzzy searching and record linkage tasks.
+    \item Built and maintained multiple internal Python libraries to enable peers to easily interface
+    with a variety of critical APIs.
+\end{itemize}
+
+\resumeEntry{Data Integrations Specialist, Engrain}{August 2023 -- May 2024}
+\begin{itemize}[leftmargin=*, noitemsep]
+    \item Built Python tools to interface with our clients' property managment software.
+    \item Set up and maintained live pricing and availability API feeds.
+\end{itemize}
+
+\resumeEntry{Intern, Presidio}{June 2019 -- August 2019}
+\begin{itemize}[leftmargin=*, noitemsep]
+    \item Documented and distributed a knowledge base on IoT/OT devices to contribute to a sales strategy 
+    targeting correlated markets.
+\end{itemize}
+
+%-----------------------------
+% Education Section
+%-----------------------------
+\section*{Education}
+
+\resumeEntry{Colorado State University - B.S., Mathematics}{2022}
+\begin{itemize}[leftmargin=*, noitemsep]
+    \item \textbf{Coursework Highlights:} Post-Quantum Cryptography, Algebraic Topology, Lie Groups
+    \item Worked as a Teaching Assistant for Mathematical Cryptography and Abstract Algebra courses.
+\end{itemize}
+
+%-----------------------------
+% Skills Section
+%-----------------------------
+\section*{Skills}
+\begin{itemize}[leftmargin=*, noitemsep]
+    \item \textbf{Coding:} Python, Pandas, git, Docker, SQL, PyTorch, scikit-learn, M, DAX
+    \item \textbf{Software/APIs:} Workato, PowerBI, Salesforce, Workfront, NetSuite, OpenAI, Pinecone, Google
+\end{itemize}
+
+%-----------------------------
+% Projects Section
+%-----------------------------
+\section*{Projects}
+
+\resumeEntry{Personal Study}{Present}
+\begin{itemize}[leftmargin=*, noitemsep]
+    \item Ongoing study to complete all exercises in Nathan Carters \textit{Data Sciense for Mathematicians},
+    Allen Hatcher's \textit{Algebraic Topology}, and Kristopher Tapp's \textit{Matrix Groups for Undergraduates}.
+\end{itemize}
+
+\resumeEntry{Minitorch}{2024}
+\begin{itemize}[leftmargin=*, noitemsep]
+    \item Followed the instructive repository \href{https://minitorch.github.io/}{minitorch}, which builds the 
+    fundamental infrastructure of the PyTorch API from scratch.
+\end{itemize}
+
+\resumeEntry{Undergraduate Mathematics Research}{2021-2022}
+\begin{itemize}[leftmargin=*, noitemsep]
+    \item Under the guidance of Henry Adams, contributed to a research project on embeddings of low-dimensional manifolds 
+    via the Laplace-Beltrami operator (e.g. Laplacian Eigenmaps).
+\end{itemize}
+
+%-----------------------------
+% Certifications and Awards Section
+%-----------------------------
+\section*{Certifications \& Awards}
+\begin{itemize}[leftmargin=*, noitemsep]
+    \item \textit{Vader Cup}, Engrain, 2024. 
+    Annual employee recognition award.
+    \item \textit{The Solutionist}, Engrain, 2023. 
+    Annual employee recognition award.
+\end{itemize}
+
+\end{document}
+
+
